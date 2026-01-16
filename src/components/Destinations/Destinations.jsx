@@ -1,5 +1,6 @@
 import { DestinationCard } from "../DestinationCard/DestinationCard";
 import "./Destinations.css"
+
 export function Destinations() {
   return (
     <section className="destinations">
@@ -7,7 +8,7 @@ export function Destinations() {
 
       <div className="destinations-grid">
         <DestinationCard
-          image="/images/paris.jpg"
+          image="../../assets/images/countries/paris.png"
           title="Paris"
           country="França"
         />
@@ -18,6 +19,21 @@ export function Destinations() {
           country="Indonésia"
         />
 
+        <DestinationCard
+          image="/images/rome.jpg"
+          title="Roma"
+          country="Itália"
+        />
+        <DestinationCard
+          image="/images/rome.jpg"
+          title="Roma"
+          country="Itália"
+        />
+        <DestinationCard
+          image="/images/rome.jpg"
+          title="Roma"
+          country="Itália"
+        />
         <DestinationCard
           image="/images/rome.jpg"
           title="Roma"
