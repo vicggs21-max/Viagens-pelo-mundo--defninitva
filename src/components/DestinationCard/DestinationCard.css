@@ -1,0 +1,44 @@
+.destination-card {
+  height: 380px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.destination-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.85),
+    transparent
+  );
+}
+
+.destination-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+.card-overlay h3 {
+  font-size: 1.6rem;
+}
+
+.card-overlay span {
+  font-size: 1rem;
+  color: var(--accent);
+}
