@@ -30,7 +30,7 @@ export function Contact() {
 
               <ul>
                 <li>📍 Atendimento global</li>
-                <li>📧 contato@viagenspelomundo.com</li>
+                <li>📧 vicggs21@gmail.com</li>
                 <li>📞 +55 (99) 99999-9999</li>
               </ul>
             </div>
