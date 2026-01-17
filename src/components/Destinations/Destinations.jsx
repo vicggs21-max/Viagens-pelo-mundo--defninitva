@@ -30,8 +30,8 @@ export function Destinations() {
         />
         <DestinationCard
           image={portugalImg}
-          title="Roma"
-          country="Itália"
+          title="Lisboa"
+          country="Portugal"
         />
   
       </div>
