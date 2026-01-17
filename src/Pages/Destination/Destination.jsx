@@ -1,8 +1,10 @@
 import "./Destination.css";
-
+import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 export function Destination() {
     return (
         <>
+            <Header />
             <section
                 className="destination-hero"
                 style={{
@@ -41,7 +43,6 @@ export function Destination() {
             </section>
             <section className="destination-highlights">
                 <div className="container">
-                    <h2>Destaques</h2>
 
                     <div className="highlights-grid">
                         <div className="highlight-card">
@@ -76,7 +77,6 @@ export function Destination() {
 
                     <div className="gallery-grid">
                         <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
-                        <img src="https://images.unsplash.com/photo-1500534314209-a26db0f5b923" />
                         <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" />
                     </div>
                 </div>
@@ -93,10 +93,8 @@ export function Destination() {
                     </ul>
                 </div>
             </section>
-            <section className="destination-cta">
-                <h2>Pronto para conhecer Santorini?</h2>
-                <button>Planejar minha viagem</button>
-            </section>
+      
+            <Footer />
         </>
     )
 }
