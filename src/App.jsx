@@ -1,22 +1,21 @@
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Home } from './Pages/Home';
+import '../src/styles/global.css';
 
-import { Home } from './Pages/Home'
-import '../src/styles/global.css'
-import { BrowserRouter } from 'react-router-dom'
-import { Header } from './components/Header/Header'
+import { Header } from './components/Header/Header';
+ import { Destination } from './Pages/Destination/Destination'; 
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-
       <Routes>
+        <Header/>
         <Route path="/" element={<Home />} />
-        <Route path="/destinos" element={<Destinos />} />
-        <Route path="/contato" element={<Contato />} />
+        <Route path="/destinos" element={<Destination />} /> 
+
       </Routes>
-      <Home />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
